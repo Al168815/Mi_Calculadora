@@ -9,14 +9,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBAction func que_hace_el_boton(_ sender: Any) {
-    }
+    @IBOutlet weak var texto_a_cambiar: UILabel!
+    @IBOutlet weak var botton_funcional: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    @IBAction func que_hace_el_boton(_ sender: UIButton) {
+        texto_a_cambiar.text = sender.titleLabel!.text ?? "NoSupo"
+        
+    }
 
-
-    @IBOutlet weak var botton_funcional: UIButton!
+    
 }
 
