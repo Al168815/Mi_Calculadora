@@ -10,17 +10,38 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var texto_a_cambiar: UILabel!
-    @IBOutlet weak var botton_funcional: UIButton!
+    
+    var botones_interfaz: Dictionary<String, IUBotonCalculadora> = [:]
+ 
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-    @IBAction func que_hace_el_boton(_ sender: UIButton) {
-        texto_a_cambiar.text = sender.titleLabel!.text ?? "NoSupo"
+        
+        inicializar_calculadora()
+        
         
     }
-
+    @IBAction func que_hace_el_boton(_ sender: UIButton) {
+        print(botones_interfaz[(sender.restorationIdentifier ??
+        botob
+        "esto no funciona")
+        }
+        
+    }
+    
+    func inicializar_calculadora() -> Void{
+        crear_arreglo_botones()
+    }
+    func crear_arreglo_botones() -> Void{
+    
+        for numero in 0...9{
+            botones_interfaz["boton_\(numero)"] IUBotonCalculadora(
+            ("boton_\(numero)",
+                               "boton_\(numero)",
+                               operacion: ""))
+        }
+    }
     
 }
 
