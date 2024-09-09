@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hola Mundo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hi9-fY-jHO">
-                                <rect key="frame" x="150" y="98" width="92" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hola Mundo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hi9-fY-jHO">
+                                <rect key="frame" x="150" y="98" width="93" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="oLI-WW-1og"/>
                                 </constraints>
@@ -111,47 +111,39 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="3"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="boton_op" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbC-1z-k4B">
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="boton_operacion" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbC-1z-k4B">
                                                 <rect key="frame" x="0.0" y="193.00000000000006" width="43.666666666666664" height="34.333333333333343"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="op"/>
+                                                <connections>
+                                                    <action selector="que_hace_el_boton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GOH-eL-lXg"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boton funcional" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d80-Cs-xNZ">
-                                <rect key="frame" x="137" y="145" width="119" height="15"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d80-Cs-xNZ">
+                                <rect key="frame" x="196.66666666666666" y="145" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHg-7c-b1l">
-                                <rect key="frame" x="159" y="188" width="75" height="34.333333333333343"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                <connections>
-                                    <action selector="que_hace_el_boton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eGJ-qo-GKJ"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Hi9-fY-jHO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="2Pc-22-rmJ"/>
-                            <constraint firstItem="sHg-7c-b1l" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="188" id="Ieh-tW-ZsT"/>
-                            <constraint firstItem="22f-VW-cpe" firstAttribute="top" secondItem="sHg-7c-b1l" secondAttribute="bottom" constant="137" id="Tny-iS-fQE"/>
                             <constraint firstItem="22f-VW-cpe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VV1-hR-zvY"/>
-                            <constraint firstItem="sHg-7c-b1l" firstAttribute="centerX" secondItem="d80-Cs-xNZ" secondAttribute="centerX" id="b9G-Hx-o7P"/>
                             <constraint firstItem="Hi9-fY-jHO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="eA5-IM-Kq1"/>
-                            <constraint firstItem="sHg-7c-b1l" firstAttribute="top" secondItem="d80-Cs-xNZ" secondAttribute="bottom" constant="28" id="gzH-fQ-YFh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="22f-VW-cpe" secondAttribute="bottom" constant="231.33333333333326" id="kkW-70-ffK"/>
+                            <constraint firstItem="22f-VW-cpe" firstAttribute="centerX" secondItem="d80-Cs-xNZ" secondAttribute="centerX" id="lcA-o5-kY9"/>
                             <constraint firstItem="d80-Cs-xNZ" firstAttribute="top" secondItem="Hi9-fY-jHO" secondAttribute="bottom" constant="26" id="mI3-lK-7wo"/>
-                            <constraint firstItem="sHg-7c-b1l" firstAttribute="centerX" secondItem="22f-VW-cpe" secondAttribute="centerX" id="v24-Lc-XgE"/>
-                            <constraint firstItem="sHg-7c-b1l" firstAttribute="centerX" secondItem="Hi9-fY-jHO" secondAttribute="centerX" id="y2G-DJ-R7U"/>
+                            <constraint firstItem="22f-VW-cpe" firstAttribute="centerX" secondItem="Hi9-fY-jHO" secondAttribute="centerX" id="yAX-1D-vHa"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="botton_funcional" destination="sHg-7c-b1l" id="E31-so-MQE"/>
+                        <outlet property="boton_operacion" destination="VbC-1z-k4B" id="z1r-oy-PjJ"/>
                         <outlet property="texto_a_cambiar" destination="d80-Cs-xNZ" id="pDh-WD-OaN"/>
                     </connections>
                 </viewController>
